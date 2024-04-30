@@ -2,7 +2,14 @@
 This is a template for website. UI/UX responsive.
 
 # Guide CSS Edit
-IDK for size height launch in your favorit browser, in chrome mobile/phone i think fix height ".msipanse = 120", should height ".msipanse = 60", just fix it if you want on css.
+``` txt
+------------------------
+|      Theme Dark      |
+------------------------
+- Based color #222
+- Hover link #8CC63E
+- Background article #111
+```
 
 # Logo
 [<img alt="Jalory Template" title="Jalory Template" width="30%" src="assets/img/logo.png" />](assets/img/logo.png)
