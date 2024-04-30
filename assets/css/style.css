@@ -1,0 +1,311 @@
+/*
+* Please do not remove this
+* 30/04/2024
+* Template by CusMeDroid
+* IyoRTML
+* Suryo DwiJayanto
+*/
+
+::-webkit-scrollbar {
+    width: 1px;
+    height: 1px;
+}
+::-webkit-scrollbar-thumb {
+    background: #fdfdfd;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
+}
+::-webkit-scrollbar-thumb:window-inactive {
+    background: #fdfdfd;
+}
+.animate-fading {
+    animation:fading 10s infinite;
+}
+@keyframes fading {
+    0%{opacity:0;}
+    50%{opacity:1;}
+    100%{opacity:0;}
+}
+.animate-opacity {
+    animation:opac 0.8s;
+}
+@keyframes opac {
+    from{opacity:0;}
+    to{opacity:1;}
+}
+.animate-top {
+    position:relative;animation:animatetop 0.4s;
+}
+@keyframes animatetop {
+    from{top:-300px;opacity:0;}
+    to{top:0;opacity:1;}
+}
+.animate-left {
+    position:relative;
+    animation:animateleft 0.4s;
+}
+@keyframes animateleft {
+    from{left:-300px;opacity:0;}
+    to{left:0;opacity:1;}
+}
+.animate-right {
+    position:relative;animation:animateright 0.4s;
+}
+@keyframes animateright {
+    from{right:-300px;opacity:0;}
+    to{right:0;opacity:1;}
+}
+.animate-bottom {
+    position:relative;animation:animatebottom 0.4s;
+}
+@keyframes animatebottom {
+    from{bottom:-300px;opacity:0;}
+    to{bottom:0;opacity:1;}
+}
+.animate-zoom {
+    animation:animatezoom 0.6s;
+}
+@keyframes animatezoom{
+    from{transform:scale(0);}
+    to{transform:scale(1);}
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    background: #222;
+    overflow: hidden;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, p {
+    padding: 0;
+    margin: 0;
+}
+
+button {
+    background: transparent;
+    cursor: pointer;
+    border: none;
+    transition: 0.4s;
+}
+
+a {
+    text-decoration: none;
+    transition: 0.4s;
+}
+
+a:hover {
+    color: #8CC63E;
+}
+
+pre {
+    overflow: auto;
+}
+
+main {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    margin: 0 auto;
+}
+
+nav {
+    width: 80px;
+    height: 100%;
+    background: #222;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    padding: 10px;
+    overflow: auto;
+}
+
+.a_active {
+    color: #8CC63E !important;
+}
+
+.alink {
+    font-size: 22px;
+    color: #fff;
+    padding: 10px;
+    margin-bottom: 25px;
+}
+
+article {
+    width: 860px;
+    height: 100%;
+    background: #111;
+    border-left: 1px solid #666;
+    border-right: 1px solid #666;
+    overflow: auto;
+}
+
+section {
+    display: flex;
+    border-bottom: 1px solid #666;
+    align-items: center;
+    padding: 10px;
+}
+
+.pos_img {
+    width: 100px;
+    height: 100px;
+    padding: 10px;
+}
+
+.pos_inf {
+    width: 100%;
+    padding: 10px;
+    color: #fff;
+    overflow: hidden;
+}
+
+.pos_title {
+    color: #fff;
+}
+
+.pos_date {
+    font-size: 12px;
+    color: #ccc;
+}
+
+aside {
+    width: 340px;
+    height: 100%;
+    background: #222;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    padding: 10px;
+    overflow: auto;
+    text-align: center;
+}
+
+.logo {
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    margin-top: 60px;
+    margin-bottom: 20px;
+}
+
+.p_title {
+    color: #fff;
+}
+
+.p_sum {
+    color: #ccc;
+    padding: 8px 20px;
+    text-align: center;
+    margin-bottom: 8px;
+}
+
+.p_juns {
+    margin-bottom: 10px;
+}
+
+.p_alink {
+    font-size: 22px;
+    color: #fff;
+    padding: 10px;
+}
+
+.p_link {
+    color: #fff;
+    padding: 4px;
+}
+
+.nowrap {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+
+.bottom-nav {
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    background: #222222;
+    z-index: 2;
+    padding: 8px;
+    font-size: 24px;
+    display: none;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.column-bottom-nav {
+    float: left;
+    width: 25%;
+    padding: 8px;
+}
+
+.bbtn {
+    width: 40px;
+    height: 40px;
+    padding: 8px;
+    color: gray;
+    text-align: center;
+    margin: 0 auto;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+#btnxprofile {
+    display: none;
+}
+
+.ppev {
+    display: none;
+}
+
+footer {
+    padding: 10px;
+    color: #ccc;
+}
+
+/* Mobile */
+@media screen and (max-width: 600px) {
+    .logo {
+        width: 72px;
+        height: 72px;
+    }
+    .ppev {
+        display: contents;
+    }
+    nav {
+        display: none;
+    }
+    aside {
+        display: none;
+        width: 100%;
+    }
+    article {
+        width: 100%;
+        border-left: 0px;
+        border-right: 0px;
+    }
+    .bottom-nav {
+        display: block;
+    }
+    main {
+        padding-bottom: 60px;
+    }
+}
