@@ -146,6 +146,7 @@ article {
     width: 860px;
     height: 100%;
     background: #111;
+    border-top: 1px solid #666;
     border-left: 1px solid #666;
     border-right: 1px solid #666;
     overflow: auto;
@@ -233,7 +234,6 @@ aside {
     text-overflow: ellipsis;
 }
 
-
 .bottom-nav {
     position: fixed;
     width: 100%;
@@ -300,6 +300,7 @@ footer {
     }
     article {
         width: 100%;
+        border-top: 0px;
         border-left: 0px;
         border-right: 0px;
     }
