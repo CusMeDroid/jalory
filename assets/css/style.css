@@ -277,11 +277,6 @@ aside {
     display: none;
 }
 
-.msipanse {
-    width: 100%;
-    height: 60px;
-}
-
 footer {
     padding: 10px;
     color: #ccc;
@@ -311,7 +306,8 @@ footer {
     .bottom-nav {
         display: block;
     }
-    main {
-        padding-bottom: 60px;
+    .msipanse {
+        width: 100%;
+        height: 60px;
     }
 }
