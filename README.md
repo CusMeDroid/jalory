@@ -2,7 +2,7 @@
 This is a template for website. UI/UX responsive.
 
 # Logo
-[<img alt="Jalory Template" title="Jalory Template" width="30%" src="favicon.ico" />](favicon.ico)
+[<img alt="Jalory Template" title="Jalory Template" width="30%" src="assets/img/logo.png" />](assets/img/logo.png)
 
 # Screenshot Tablet/PC
 [<img alt="Jalory Template | Screenshot" title="Jalory Template | Screenshot" width="50%" src="assets/screenshot/d001.png" />](assets/screenshot/d001.png) 
