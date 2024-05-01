@@ -21,20 +21,24 @@
     <body id="myCopyright">
         <main>
             <nav class="animate-left">
-                <a title="Home" class="alink a_active" href="">
+                <a title="Home" class="a_active" id="n_home">
                     <i class="fa fa-home" aria-hidden="true"></i>
                 </a>
-                <a title="About" class="alink" href="">
+                <a title="About" id="n_about">
                     <i class="fa fa-info-circle" aria-hidden="true"></i>
                 </a>
-                <a title="Search" class="alink" href="">
+                <a title="Search" id="n_search">
                     <i class="fa fa-search" aria-hidden="true"></i>
                 </a>
-                <a title="Privacy Policy" class="alink" href="">
+                <a title="Privacy Policy" id="n_privacy">
                     <i class="fa fa-shield" aria-hidden="true"></i>
                 </a>
             </nav>
-            <article class="animate-top">
+            <!-- Home -->
+            <article class="animate-top" id="home">
+                <div class="padusa">
+                    <h2>Home</h2>
+                </div>
                 <section>
                     <img class="pos_img" src="assets/img/logo.png" />
                     <div class="pos_inf">
@@ -101,6 +105,80 @@
                 </section>
                 <div class="msipanse"></div>
             </article>
+            <!-- About -->
+            <article class="animate-top pad20" id="about">
+                <h2>About</h2>
+                <div align="center">
+                    <img class="logo" src="assets/img/logo.png" />
+                    <h2 class="p_title">Jalory</h2>
+                    <p class="p_sum">This is a template for website. UI/UX responsive. Created by CusMeDroid or Suryo Dwijayanto. 
+You can use this template with a note that do not delete the author.</p>
+                    <div class="row">
+                        <div class="column3">
+                            <a title="Home Jalory" target="_blank" href="assets/screenshot/d001.png">
+                                <img alt="Screenshot Home Jalory" src="assets/screenshot/d001.png" width="100%" />
+                            </a>
+                        </div>
+                        <div class="column3">
+                            <a title="About Jalory" target="_blank" href="assets/screenshot/d002.png">
+                                <img alt="Screenshot About Jalory " src="assets/screenshot/d002.png" width="100%" />
+                            </a>
+                        </div>
+                        <div class="column3">
+                            <a title="Search Jalory" target="_blank" href="assets/screenshot/d003.png">
+                                <img alt="Screenshot Search Jalory" src="assets/screenshot/d003.png" width="100%" />
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="msipanse"></div>
+            </article>
+            <!-- Search -->
+            <article class="animate-top" id="search">
+                <div class="padusa">
+                    <h2>Search</h2>
+                    <center class="spbt">
+                        <div class="acsxd" align="left">
+                          <div class="autocomplete">
+                            <input autocomplete="off" class="sww-input-text radius-20" type="search" name="search" id="txtsearch" placeholder="Searching...">
+                          </div>
+                          <button class="acsss" type="submit" onclick="submitFunc()">
+                            <i class="fa fa-search padd-4" aria-hidden="true"></i>
+                          </button>
+                        </div>
+                    </center>
+                </div>
+                <section>
+                    <img class="pos_img" src="assets/img/logo.png" />
+                    <div class="pos_inf">
+                        <h1 class="nowrap"><a class="pos_title" href="">Title</a></h1>
+                        <span class="pos_date">01/01/1991</span>
+                        <p class="nowrap">Description</p>
+                    </div>
+                </section>
+                <section>
+                    <img class="pos_img" src="assets/img/logo.png" />
+                    <div class="pos_inf">
+                        <h1 class="nowrap"><a class="pos_title" href="">Title</a></h1>
+                        <span class="pos_date">01/01/1991</span>
+                        <p class="nowrap">Description</p>
+                    </div>
+                </section>
+                <section>
+                    <img class="pos_img" src="assets/img/logo.png" />
+                    <div class="pos_inf">
+                        <h1 class="nowrap"><a class="pos_title" href="">Title</a></h1>
+                        <span class="pos_date">01/01/1991</span>
+                        <p class="nowrap">Description</p>
+                    </div>
+                </section>
+                <div class="msipanse"></div>
+            </article>
+            <!-- Privacy -->
+            <article class="animate-top pad20" id="privacy">
+                <h2>Privacy</h2>
+                <div class="msipanse"></div>
+            </article>
             <aside id="myprofile" class="animate-right">
                 <img class="logo" src="assets/img/logo.png" />
                 <h2 class="p_title">Jalory</h2>
@@ -120,7 +198,7 @@
                     </a>
                 </div>
                 <footer>
-                    <p class="ppev"><a title="Privacy Policy" href="" class="p_link">Privacy Policy</a></p>
+                    <p class="ppev"><a title="Privacy Policy" id="btm_privacy" class="p_link">Privacy Policy</a></p>
                     <p>Copyright © 2024 - <a class="p_title" href="">Jalory</a></p>
                     <p>Template by <a class="a_active" title="CusMeDroid" href="">CusMeDroid</a></p>
                 </footer>
@@ -129,17 +207,17 @@
         <div class="bottom-nav animate-bottom">
             <div class="row" align="center">
                 <div class="column-bottom-nav">
-                    <a title="Home" href="" class="bbtn a_active">
+                    <a title="Home" id="btm_home" class="a_active">
                         <i class="fa fa-home" aria-hidden="true"></i>
                     </a>
                 </div>
                 <div class="column-bottom-nav">
-                    <a title="About" href="" class="bbtn">
+                    <a title="About" id="btm_about">
                         <i class="fa fa-info-circle" aria-hidden="true"></i>
                     </a>
                 </div>
                 <div class="column-bottom-nav">
-                    <a title="Search" href="" class="bbtn">
+                    <a title="Search" id="btm_search">
                         <i class="fa fa-search" aria-hidden="true"></i>
                     </a>
                 </div>
