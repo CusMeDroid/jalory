@@ -224,6 +224,22 @@ section {
     padding: 20px;
 }
 
+.padbo6{
+    padding-bottom: 6px;
+}
+
+#privacy p {
+    text-align: justify;
+}
+
+#privacy a {
+    color: #fff;
+}
+
+#privacy a:hover {
+    color: #8CC63E;
+}
+
 .acsxd {
     border: 2px solid #ECECEC;
     border-radius: 30px;
